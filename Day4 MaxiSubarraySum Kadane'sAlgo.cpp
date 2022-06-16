@@ -13,7 +13,7 @@ long long maxSubarraySum(int arr[], int n)
            max_sum=curr_sum;
        }
        
-       if(curr_sum<0){
+       if(curr_sum<0){      // if curr sum is less than 0 therefore it will not contribute in max sum as it will only decrease it by some extent so we assign it to 0 
            curr_sum=0;
        }
    }
